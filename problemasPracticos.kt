@@ -102,3 +102,27 @@ fun PEDOMETRO(NumberOFStepS: Int): Double {
     val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
     return TotalCALORIESburned
 }
+
+fun main() {
+    var timeSpentToday = 300
+    var timeSpentYesterday = 250
+    println(comparacion(timeSpentToday, timeSpentYesterday))
+} 
+
+fun comparacion(num1: Int, num2: Int): Boolean {  
+    return num1 > num2
+}
+
+fun main() {
+    tempCiudad("Ankara", 27, 31, 82)
+    tempCiudad("Tokyo", 32, 36, 10)
+    tempCiudad("Cape Town", 59, 64, 2)
+    tempCiudad("Guatemala City", 50, 55, 7)
+}
+
+fun tempCiudad(city: String, bajaTemp: Int, altaTemp: Int, probabilidad: Int) {
+    println("City: $city")
+    println("Low temperature: $bajaTemp, High temperature: $altaTemp")
+    println("Chance of rain: $probabilidad%")
+    println()
+}
